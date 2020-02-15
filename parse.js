@@ -50,7 +50,7 @@ for (const tweet of statuses.filter(t => !isRetweet(t))) {
   const tweetText = getTweetText(tweet);
   const line = [
     `https://twitter.com/${tweet.user.id_str}/status/${tweet.id_str}`,
-    tweet.user.id_str,
+    tweet.id_str,
     tweet.user.screen_name,
     tweet.user.name,
     tweet.user.description,
