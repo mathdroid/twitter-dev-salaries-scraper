@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const statuses = require("./statuses2020-02-15T05:56:25.030Z.json"); // Change accordingly
+const statuses = require("./statuses2020-02-15T06:11:23.438Z.json"); // Change accordingly
 
 const { getTweetText, isRetweet } = require("./util/tweets");
 
@@ -44,7 +44,7 @@ const getSalary = tweetText =>
     .replace(":", "")
     .trim();
 
-const csvHeaders = `url,tweetId,screenName,name,followersCount,education,experience,level,location,salary`;
+const csvHeaders = `url,tweetId,screenName,name,bio,followersCount,education,experience,level,location,salary`;
 const csv = [csvHeaders];
 for (const tweet of statuses.filter(t => !isRetweet(t))) {
   const tweetText = getTweetText(tweet);
@@ -53,6 +53,7 @@ for (const tweet of statuses.filter(t => !isRetweet(t))) {
     tweet.user.id_str,
     tweet.user.screen_name,
     tweet.user.name,
+    tweet.user.description,
     tweet.user.followers_count,
     getEducation(tweetText),
     getExperience(tweetText),
