@@ -1,5 +1,7 @@
 # Twitter Developer Salary Scraper
 
+https://docs.google.com/spreadsheets/d/1-xIgk7Mw1S5DXTZSbKBgxlsQAn7XGIu7Mfy72lSVHKk/edit?usp=sharing
+
 > A simple script to scrape #KnowYourWorth tweets inspired by @ZacSweers' tweet: https://twitter.com/ZacSweers/status/1228205724255154177
 
 ## Prerequisites
