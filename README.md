@@ -20,7 +20,7 @@ Twitter developer App and its corresponding consumer key/secret and access token
 
 2. Install dependencies (`npm install`/`yarn`)
 
-3. fill `.env.example` with the keys/secrets
+3. fill `.env.example` with the keys/secrets (change file name to `.env`)
 
 4. `node index.js` to generate tweets json
 
